@@ -8,6 +8,18 @@
 > git config --global --unset http.cookiefile
 > https://www.cnblogs.com/fireporsche/p/9359130.html
 > https://www.cnblogs.com/dengxiaoning/p/13336783.html
+> https://www.ipaddress.com/
+> 140.82.113.3
+> 199.232.69.194
+> 140.82.113.3 github.com
+> 199.232.69.194 github.global.ssl.fastly.net
+> ipconfig /flushdns
+> Unknown SSL protocol error in connection to github.com:443 
+> 使用git从远程下载时，出现Unknown SSL protocol error in connection to xxx:443 错误。
+> 很有可能是被墙在了外面，这里针对墙在外面的情况。
+> git config --global http.proxy 127.0.0.1:1080
+> git config --global http.sslVerify false
+> https://blog.csdn.net/e_wsq/article/details/114262711
 > ```
 
 > ## Step 2：Install go
