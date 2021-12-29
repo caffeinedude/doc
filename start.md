@@ -24,7 +24,40 @@
 
 > ## Step 2：Install go
 
+GOBIN
+%GOPATH%\bin
+
+GOPATH
+E:\gopath
+
+GOROOT
+E:\goroot
+
+打开cmd或者powershell，输入go version和go env，看到相关信息即配置成功
+
 > ## Step 3：Install vscode
+Tools environment: GOPATH=C:\Users\Administrator\go
+Installing 10 tools at C:\Users\Administrator\go\bin in module mode.
+ 
+在配置好环境已经，安装VSCode，之后安装Go插件，之后重启vscode。
+接下来需要的就是在文件-首选项-设置中设置GoPath和GoRoot，这样才算是基本完成。
+
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "go.useLanguageServer": false,
+    "go.gopath": "E:\\gopath",
+    "go.goroot": "E:\\goroot"
+}
+
+这里再说一点，你可以在VSCode安装一个Code Runner插件，直接右击就可以运行，当然你也可以在终端进入到hello.go文件目录，运行go install 或者 go build，之后在bin目录中找到hello.exe文件运行。结果是一样的。
+
+https://blog.csdn.net/mnmiaoyi/article/details/98847144
+https://blog.csdn.net/mnmiaoyi/article/details/98847144 镜像 网站
+
+https://easydoc.net/p/57789218/u2Oy3U4O
+https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_5_1.shtml
+https://github.com/wechatpay-apiv3/wechatpay-go
+https://blog.csdn.net/weixin_43314519/article/details/120556710
 
 > ## Step 4：Start project
 > ```
